@@ -56,7 +56,18 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer />
+        <footer>
+          <hr />
+          <div>
+            Contact:
+            <a href="http://www.jeffreyaheller.com">Portfolio</a> |{" "}
+            <a href="https://github.com/Jheller11">Github</a> |{" "}
+            <a href="https://www.linkedin.com/in/jeffreyaheller/">LinkedIn</a> |{" "}
+            <a href="mailto:heller.jeffrey@gmail.com">
+              heller.jeffrey@gmail.com
+            </a>
+          </div>
+        </footer>
       </div>
     )
   }

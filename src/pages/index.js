@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styles from "./index.module.css"
 
 class BlogIndex extends React.Component {
   render() {
@@ -22,8 +23,8 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
-              <h3 style={{}}>
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+              <h3>
+                <Link className={styles.link} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
