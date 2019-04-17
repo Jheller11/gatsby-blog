@@ -3,7 +3,7 @@ module.exports = {
     title: `Jeff's Blog`,
     author: `Jeff Heller`,
     description: ``,
-    siteUrl: ``,
+    siteUrl: `localhost:8000`,
   },
   plugins: [
     {
@@ -65,11 +65,5 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
   ],
 }
