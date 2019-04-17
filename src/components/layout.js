@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import styles from "./layout.module.css"
 
 class Layout extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class Layout extends React.Component {
         >
           <Link
             style={{
+              fontFamily: "'Bitter', serif",
               boxShadow: `none`,
               textDecoration: `none`,
               color: `inherit`,
@@ -48,22 +50,37 @@ class Layout extends React.Component {
       )
     }
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-        }}
-      >
+      <div className={styles.body}>
         <header>{header}</header>
-        <main>{children}</main>
+        <main className={styles.main}>{children}</main>
         <footer>
           <hr />
-          <div>
-            Contact:
-            <a href="http://www.jeffreyaheller.com">Portfolio</a> |{" "}
-            <a href="https://github.com/Jheller11">Github</a> |{" "}
-            <a href="https://www.linkedin.com/in/jeffreyaheller/">LinkedIn</a> |{" "}
-            <a href="mailto:heller.jeffrey@gmail.com">
+          <div className={styles.linkContainer}>
+            <a
+              className={styles.footerLink}
+              href="http://www.jeffreyaheller.com"
+            >
+              My Portfolio
+            </a>{" "}
+            |{" "}
+            <a
+              className={styles.footerLink}
+              href="https://github.com/Jheller11"
+            >
+              Github
+            </a>{" "}
+            |{" "}
+            <a
+              className={styles.footerLink}
+              href="https://www.linkedin.com/in/jeffreyaheller/"
+            >
+              LinkedIn
+            </a>{" "}
+            |{" "}
+            <a
+              className={styles.footerLink}
+              href="mailto:heller.jeffrey@gmail.com"
+            >
               heller.jeffrey@gmail.com
             </a>
           </div>

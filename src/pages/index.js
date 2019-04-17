@@ -19,10 +19,11 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
+        <h3>All Posts:</h3>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
+            <div className={styles.listItem} key={node.fields.slug}>
               <h3>
                 <Link className={styles.link} to={node.fields.slug}>
                   {title}
@@ -54,7 +55,6 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
           fields {
             slug
           }

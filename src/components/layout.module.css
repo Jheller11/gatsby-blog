@@ -1,0 +1,28 @@
+.body {
+  background-color: #fffcff;
+  color: #141415;
+}
+
+.main {
+  min-height: 75vh;
+}
+
+.footerLink {
+  color: #247ba0;
+  text-decoration: none;
+  font-family: Cardo, serif;
+}
+
+.linkContainer {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .linkContainer {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
