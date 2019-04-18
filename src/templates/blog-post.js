@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -26,7 +25,7 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr style={{}} />
+        <hr style={{ width: "90%", margin: "0 auto" }} />
 
         <ul
           style={{
@@ -34,6 +33,8 @@ class BlogPostTemplate extends React.Component {
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
+            width: "90%",
+            margin: "1rem auto",
             padding: 0,
           }}
         >
