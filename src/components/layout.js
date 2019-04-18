@@ -10,43 +10,19 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              fontFamily: "'Bitter', serif",
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
+        <nav className={styles.nav}>
+          <h1 className={styles.title}>
+            <Link to={`/`}>{title}</Link>
+          </h1>
+        </nav>
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
+        <nav className={styles.nav}>
+          <h3 className={styles.title}>
+            <Link to={`/`}>{title}</Link>
+          </h3>
+        </nav>
       )
     }
     return (

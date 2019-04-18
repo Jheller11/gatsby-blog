@@ -18,7 +18,9 @@ function Bio() {
         return (
           <div
             style={{
-              display: `flex`,
+              width: "50%",
+              margin: "0 auto",
+              textAlign: "center",
             }}
           >
             <Image

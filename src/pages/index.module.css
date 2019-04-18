@@ -1,8 +1,25 @@
 .link {
-  color: rgb(10, 10, 10);
+  color: #247ba0;
   text-decoration: none;
 }
 
-.listItem::before {
-  content: "-----------";
+.listItem {
+  text-align: center;
+}
+
+.listItem::after {
+  content: "--------------------------------------------";
+  color: #4c5c68;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

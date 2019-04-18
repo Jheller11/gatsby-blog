@@ -18,26 +18,29 @@ class BlogIndex extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <Bio />
-        <h3>All Posts:</h3>
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div className={styles.listItem} key={node.fields.slug}>
-              <h3>
-                <Link className={styles.link} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || null,
-                }}
-              />
-            </div>
-          )
-        })}
+        <div className={styles.grid}>
+          <div>
+            {posts.map(({ node }) => {
+              const title = node.frontmatter.title || node.fields.slug
+              return (
+                <div className={styles.listItem} key={node.fields.slug}>
+                  <h3>
+                    <Link className={styles.link} to={node.fields.slug}>
+                      {title}
+                    </Link>
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || null,
+                    }}
+                  />
+                </div>
+              )
+            })}
+          </div>
+          <Bio />
+        </div>
       </Layout>
     )
   }

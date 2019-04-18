@@ -1,6 +1,7 @@
 .body {
   background-color: #fffcff;
   color: #141415;
+  padding: 0.5rem 1rem;
 }
 
 .main {
@@ -10,7 +11,7 @@
 .footerLink {
   color: #247ba0;
   text-decoration: none;
-  font-family: Cardo, serif;
+  font-family: "Cardo", serif;
 }
 
 .linkContainer {
@@ -20,9 +21,25 @@
   margin: 0 auto;
 }
 
+.nav {
+  padding: 0;
+  margin: 0;
+  display: inline;
+  text-align: center;
+}
+
+.title > a {
+  color: #247ba0;
+  text-decoration: none;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .linkContainer {
     width: 100%;
     flex-wrap: wrap;
+  }
+
+  .body {
+    padding: 0.5rem;
   }
 }
