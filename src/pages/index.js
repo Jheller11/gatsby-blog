@@ -33,7 +33,11 @@ class BlogIndex extends React.Component {
                   <div className={styles.keywordList}>
                     <FontAwesome name="key" />
                     {node.frontmatter.keywords.map(word => {
-                      return <span className={styles.keywordItem}>{word}</span>
+                      return (
+                        <span key={word} className={styles.keywordItem}>
+                          {word}
+                        </span>
+                      )
                     })}
                   </div>
                   <p
