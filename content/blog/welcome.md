@@ -1,6 +1,8 @@
 ---
 title: "Getting Started"
-description: "a quick intro"
+description: "Welcome to my blog!"
 date: "2019-04-19"
-keywords: ["hello", "please", "work"]
+keywords: ["Intro"]
 ---
+
+Here is the intro

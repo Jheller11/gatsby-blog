@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styles from "./index.module.css"
+import FontAwesome from "react-fontawesome"
 
 class BlogIndex extends React.Component {
   render() {
@@ -23,12 +24,18 @@ class BlogIndex extends React.Component {
               const title = node.frontmatter.title || node.fields.slug
               return (
                 <div className={styles.listItem} key={node.fields.slug}>
-                  <h3>
+                  <h3 style={{ margin: "0.5rem" }}>
                     <Link className={styles.link} to={node.fields.slug}>
                       {title}
                     </Link>
                   </h3>
                   <small>{node.frontmatter.date}</small>
+                  <div className={styles.keywordList}>
+                    <FontAwesome name="key" />
+                    {node.frontmatter.keywords.map(word => {
+                      return <span className={styles.keywordItem}>{word}</span>
+                    })}
+                  </div>
                   <p
                     dangerouslySetInnerHTML={{
                       __html: node.frontmatter.description || null,

@@ -17,6 +17,13 @@
   grid-template-columns: 50% 50%;
 }
 
+.keywordList > * {
+  color: #2b4162;
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 0 0.25rem;
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .grid {
     display: flex;
