@@ -36,28 +36,31 @@ class Layout extends React.Component {
               className={styles.footerLink}
               href="http://www.jeffreyaheller.com"
             >
-              My Portfolio
-            </a>{" "}
-            |{" "}
+              Portfolio
+            </a>
             <a
               className={styles.footerLink}
               href="https://github.com/Jheller11"
             >
               Github
-            </a>{" "}
-            |{" "}
+            </a>
             <a
               className={styles.footerLink}
               href="https://www.linkedin.com/in/jeffreyaheller/"
             >
               LinkedIn
-            </a>{" "}
-            |{" "}
+            </a>
             <a
               className={styles.footerLink}
               href="mailto:heller.jeffrey@gmail.com"
             >
               heller.jeffrey@gmail.com
+            </a>
+            <a
+              className={styles.footerLink}
+              href="https://twitter.com/jeff_heller_"
+            >
+              @jeff_heller_
             </a>
           </div>
         </footer>
