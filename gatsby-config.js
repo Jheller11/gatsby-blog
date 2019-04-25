@@ -63,6 +63,12 @@ module.exports = {
         icon: `content/assets/favicon.png`,
       },
     },
+    {
+      resolve: "gatsby-plugin-favicon",
+      option: {
+        logo: "./content/assets/favicon.png",
+      },
+    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
   ],
