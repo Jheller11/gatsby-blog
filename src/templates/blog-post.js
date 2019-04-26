@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styles from "./blog-post.module.css"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -16,17 +17,16 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            display: `block`,
-          }}
-        >
-          {post.frontmatter.date}
+        <h1 className={styles.title}>{post.frontmatter.title}</h1>
+        <p className={styles.date}>{post.frontmatter.date}</p>
+        <p className={styles.keywords}>
+          Keywords: {post.frontmatter.keywords.join(" | ")}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div
+          className={styles.text}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
         <hr style={{ width: "90%", margin: "0 auto" }} />
-
         <ul
           style={{
             display: `flex`,

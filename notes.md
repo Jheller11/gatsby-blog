@@ -13,3 +13,12 @@ https://github.com/gatsbyjs/gatsby-starter-blog
 ## Packages added
 
 1. React Fontawesome (https://www.npmjs.com/package/react-fontawesome)
+
+## Potential Future Topics
+
+1. CSS Transitions
+2. React - hooks
+3. Gatsby (development of my blog)
+4. CSS Grid vs. Flexbox
+5. GraphQL
+6. SQL

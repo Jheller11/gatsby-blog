@@ -14,6 +14,10 @@
   font-family: "Cardo", serif;
 }
 
+.footerLink:hover {
+  color: #931621;
+}
+
 .linkContainer {
   width: 50%;
   display: flex;

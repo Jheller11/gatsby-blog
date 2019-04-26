@@ -35,7 +35,11 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p />
+            <p style={{ fontSize: "85%" }}>
+              Developer living in New York, NY. Currently working on freelance
+              web site builds and looking for full time positions in front end
+              development.
+            </p>
           </div>
         )
       }}
