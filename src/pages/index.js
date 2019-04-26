@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styles from "./index.module.css"
 import FontAwesome from "react-fontawesome"
+import "@fortawesome/fontawesome-free/css/all.min.css"
 
 class BlogIndex extends React.Component {
   render() {

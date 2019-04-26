@@ -35,7 +35,7 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>Hello I'm jeff</p>
+            <p />
           </div>
         )
       }}
